@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Employee Data Management</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Employee Data Management</h1>
+            <p class="lead">A Comprehensive Directory of Employee Billable Hours</p>
+            <hr class="my-2">
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Current Employees
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <h6 class="card-title col-md-2">Employee Name</h6>
+                    <h6 class="card-title col-md-2">Role</h6>
+                    <h6 class="card-title col-md-2">Start Date</h6>
+                    <h6 class="card-title col-md-2">Months Worked</h6>
+                    <h6 class="card-title col-md-2">Monthly Rate ($)</h6>
+                    <h6 class="card-title col-md-2">Total Billed ($)</h6>
+                </div>
+                <hr class="my-2">
+                <div id="new-user"></div>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                Add Employee
+            </div>
+            <p class="lead"></p>
+            <form class="card-body">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Employee Name</label>
+                    <input type="text" class="form-control" id="employeeName" placeholder="Employee Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Role</label>
+                    <input type="text" class="form-control" id="role" placeholder="Role" required>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Start Date (MM/DD/YYYY)</label>
+                    <input type="date" class="form-control" id="startDate" placeholder="Start Date" required>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">Monthly Rate</label>
+                    <input type="text" class="form-control" id="monthlyRate" placeholder="Monthly Rate" required>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script src="./assets/javascript/main.js"></script>
+</body>
+
+</html>

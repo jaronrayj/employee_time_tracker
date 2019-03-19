@@ -1,0 +1,22 @@
+#submit {
+    background-color: blue;
+    color: white;
+    border: solid blue;
+    margin-left: 950px;
+}
+
+.addEmployee {
+    border: solid grey 1px;
+}
+
+.employeeHeader {
+    background-color: grey;
+    font-size: medium;
+    width: 1123px;
+}
+
+.jumbotron {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
